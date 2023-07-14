@@ -1,0 +1,21 @@
+.background-video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.background-overlay::after {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: black;
+  opacity: 0.9;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
